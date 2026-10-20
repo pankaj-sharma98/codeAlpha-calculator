@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f2f6fb">
+  <title>My Calculator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calculator-header">
+        <div>
+          <p class="eyebrow">SIMPLE TOOLS</p>
+          <h1>My Calculator</h1>
+        </div>
+        <span class="calculator-mark" aria-hidden="true"><i class="key-icon fa-solid fa-plus"></i></span>
+      </header>
+
+      <div class="display" aria-label="Calculator display">
+        <div class="display-expression" id="expression" aria-hidden="true">&nbsp;</div>
+        <output class="display-value" id="display" aria-live="polite" aria-atomic="true">0</output>
+      </div>
+
+      <div class="keypad" aria-label="Calculator keys">
+        <button class="key key-utility" type="button" data-action="clear" aria-label="Clear all">C</button>
+        <button class="key key-utility" type="button" data-action="sign" aria-label="Change sign"><i class="key-icon fa-solid fa-plus-minus" aria-hidden="true"></i></button>
+        <button class="key key-utility" type="button" data-action="backspace" aria-label="Backspace"><i class="key-icon fa-solid fa-delete-left" aria-hidden="true"></i></button>
+        <button class="key key-operator" type="button" data-operator="/" aria-label="Divide"><i class="key-icon fa-solid fa-divide" aria-hidden="true"></i></button>
+
+        <button class="key" type="button" data-number="7">7</button>
+        <button class="key" type="button" data-number="8">8</button>
+        <button class="key" type="button" data-number="9">9</button>
+        <button class="key key-operator" type="button" data-operator="*" aria-label="Multiply"><i class="key-icon fa-solid fa-xmark" aria-hidden="true"></i></button>
+
+        <button class="key" type="button" data-number="4">4</button>
+        <button class="key" type="button" data-number="5">5</button>
+        <button class="key" type="button" data-number="6">6</button>
+        <button class="key key-operator" type="button" data-operator="-" aria-label="Subtract"><i class="key-icon fa-solid fa-minus" aria-hidden="true"></i></button>
+
+        <button class="key" type="button" data-number="1">1</button>
+        <button class="key" type="button" data-number="2">2</button>
+        <button class="key" type="button" data-number="3">3</button>
+        <button class="key key-operator" type="button" data-operator="+" aria-label="Add"><i class="key-icon fa-solid fa-plus" aria-hidden="true"></i></button>
+
+        <button class="key key-zero" type="button" data-number="0">0</button>
+        <button class="key" type="button" data-action="decimal" aria-label="Decimal point">.</button>
+        <button class="key key-equals" type="button" data-action="equals" aria-label="Equals"><i class="key-icon fa-solid fa-equals" aria-hidden="true"></i></button>
+      </div>
+      <p class="keyboard-hint">Tip: use your keyboard to enter calculations</p>
+    </section>
+  </main>
+</body>
+</html>
